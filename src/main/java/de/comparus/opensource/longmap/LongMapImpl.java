@@ -77,7 +77,7 @@ public class LongMapImpl<V> implements LongMap<V> {
     }
 
     public boolean isEmpty() {
-        return false;
+        return size == 0;
     }
 
     public boolean containsKey(long key) {
@@ -101,7 +101,8 @@ public class LongMapImpl<V> implements LongMap<V> {
     }
 
     public void clear() {
-
+        map = new Node[mapSize];
+        size = 0;
     }
 
     private int getHash(long n) {
