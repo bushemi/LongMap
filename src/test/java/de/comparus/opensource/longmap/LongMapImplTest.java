@@ -15,8 +15,8 @@ import static org.junit.Assert.*;
 public class LongMapImplTest {
     private static final int START = 0;
     private static final int FINISH = 50000;
-    Map<Long, String> map = new HashMap<>();
-    LongMapImpl<String> map2 = new LongMapImpl<>();
+    private Map<Long, String> map = new HashMap<>();
+    private LongMap<String> map2 = new LongMapImpl<>();
 
     @Test
     public void putHashMap() {
@@ -223,6 +223,7 @@ public class LongMapImplTest {
         long finish = System.currentTimeMillis();
         System.out.println("finish-start = " + (finish - start));
         assertEquals(FINISH, values.length);
+        Arrays.stream(values).forEach(System.out::println);
     }
 
     @Test
