@@ -6,8 +6,8 @@ Finish development of class LongMapImpl, which implements a map with keys of typ
 * the main aim is to see your codestyle and teststyle 
 
 
-link to implementation:
+<b>Link to implementation:</b><br/>
 https://github.com/bushemi/LongMap/blob/master/src/main/java/de/comparus/opensource/longmap/LongMapImpl.java
 
-link to tests:
+<b>Link to tests:</b><br/>
 https://github.com/bushemi/LongMap/blob/master/src/test/java/de/comparus/opensource/longmap/LongMapImplTest.java
